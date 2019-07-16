@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JETSPEED TRAVEL | Roam the world in style</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+        
+        <style> 
+            body{
+                margin: 0;
+                font-family: Tahoma, Geneva, sans-serif;
+                min-width: 960px;
+                z-index: 0;
+                }
+                .container{
+                    width: 960px;
+                    margin: auto;
+                    overflow: auto;
+                    position: relative;
+                    
+                    /*border: 1px solid black;*/
+                }   
+                
+                header{
+                    text-align: center;
+                    width: 100%;
+                }    
+                nav{
+                    font-weight: bold;
+                    background-image: url("blacktile.jpg");
+                    z-index: 1;
+                    background-repeat: repeat-x;
+                }
+                nav ul, footer ul{
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 20px 0px;
+                }
+                nav li, footer li{
+                    display: inline;
+                    margin: 20px;
+                    text-transform: uppercase;
+                    z-index: 2;
+                }
+                nav a{
+                    display: inline-block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    text-shadow: 1px 1px 0px #283744;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                }
+                .container:last-child a{
+                    border-right: 0;
+                }
+                nav a#pull{
+                    display: none;
+                }
+                nav a:hover{
+                    border-bottom: 2px solid lightgray;
+                }
+                
+                main{
+                    text-align: center;
+                    color: #505E67;
+                    margin-bottom: 40px;
+                }
+                main h1{
+                    font-weight: bold;
+                    letter-spacing: 0.5px;
+                    font-size: 2.2em;
+                    margin-top: 50px;
+                    border-bottom: 1px dashed lightgray;
+                    z-index: 1;
+                }
+                main img{
+                    width: 70%;
+                    margin: auto;
+                    padding: 2px;
+                    border: 1px solid lightgray;
+                }
+                .customerBox{
+                    border: 2px outset lightgray;
+                    width: 60%;
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                }
+                .customerBox h1{
+                    font-size: 1.2em;
+                    margin-top: 0px;
+                    padding: 10px;
+                }
+                .customerBox p{
+                    padding: 0 10px;
+                }
+                .customerBox h2{
+                    font-size: 1em;
+                    font-weight: normal;
+                    font-style: italic;
+                    text-align: right;
+                    padding-top: 5px;
+                    padding-right: 10px;
+                    border-top: 1px dashed lightgray;
+                }
+                
+                .floatLeft{
+                    margin-left: 15%;
+                    float: left;
+                }
+                .floatRight{
+                    margin-right: 15%;
+                    float: right;
+                }
+                .clearFloat{
+                    clear: both;
+                }
+                main table{
+                    border: 1px solid lightgray;
+                    margin: auto;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+                main th, main td{
+                    padding: 20px;
+                    border: 1px solid lightgray;
+                }
+                main th{
+                    font-size: 1.2em;
+                    background-color: #505E67;
+                    color: white;
+                }
+                main tr:nth-child(odd){
+                    background-color: #E6E6E6;
+                }
+                footer{
+                    text-align: center;
+                    width: 100%;
+                    background-color: #232244;
+                    color: white;
+                }
+                footer a{
+                    color: white;
+                }
+                #contactUs{
+                    width: 150px;
+                    height: 30px;
+                    background-color: #26244B;
+                    text-align: center;
+                    padding-top: 10px;
+                    border-radius: 5px;
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                }
+                #contactUs a{
+                    color: white;
+                    text-decoration: none;
+                }
+        </style>
+    </head>
+    
+    <body>
+        <div id="contactUs">
+            <a href="mailto:bhanu.dounde1996@gmail.com">Email Us</a>
+        </div>    
+        <header>
+            <img src="logo.png" alt="logo" >
+            <nav>
+                <div class="container"> 
+                    <ul>
+                        <li> <a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="BookH.html">Book Hotel</a></li>
+                        <li><a href="BookF.html">Book Flight</a></li>
+                        <li><a href="BookP.html">Book Package</a></li>
+                        <li><a href="TrvlIns.html">Travel Insurance</a></li>
+                    </ul>
+                    <a href="#" id= "pull"> Menu <a>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="container">
+                <h1>Why Travel With Us?</h1>
+                <p>Awarded #1 Travel Agency for families with Pre-school Kids</p>
+                <p>Accredited with National Travel Agencies Association</p>
+                <p>Awarded Best Tour Agency in 2013,2014</p>
+                
+                <h1>Photo Galleries</h1>
+                
+                <h2>Malaysia</h2>
+                <img src="malaysia.jpg" alt="Malaysia"  />
+                <h2>Japan</h2>
+                <img src="japan.jpg" alt="Japan">
+                <h2>China</h2>
+                <img src="china.jpg" alt="China">
+                <h1>What Customers are Saying</h1>
+                <div class="customerBox floatLeft">
+                    <h1>An Incredible Experience</h1>
+                    <p>I went to Bali.....</p>
+                    <h2>Jeremy Lee</h2>
+                </div>
+                <div class="customerBox floatRight">
+                    <h1>Kudos to Ms Deng</h1>
+                    <p>Part of our.....</p>
+                    <h2>Cindy</h2>
+                </div>
+                
+                <div class="clearFloat"></div>
+                
+                <h1>Upcoming Tour Dates</h1>
+                <table>
+                    <tr>
+                        <th>Tour Package</th>
+                        <th>Dates</th>
+                        <th>Status</th>
+                    </tr>    
+                    <tr>
+                        <td>8 Days 7 Night China Tour</td>
+                        <td>1 Mar 15 to 8 Mar 15</td>
+                        <td>Confirmed Departure, No Vacancies left</td> 
+                    </tr>
+                    <tr>
+                        <td>10 Days 9 Night Africa Tour</td>
+                        <td>5 Mar 15 to 14 Mar 15</td>
+                        <td>Confirmed Departure, No Vacancies left</td> 
+                    </tr>
+                    <tr>
+                        <td>8 Days 7 Night Greece Tour</td>
+                        <td>15 Mar 15 to 22 Mar 15</td>
+                        <td>Confirmed Departure, Vacancies Available</td> 
+                    </tr>
+                    <tr>
+                        <td>13 Days 12 Night Korea and Japan Tour</td>
+                        <td>20 Mar 15 to 1 Apr 15</td>
+                        <td>Pending</td> 
+                    </tr>
+                </table>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container"> 
+                <ul>
+                    <li> <a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="press.html">Press Release</a></li>
+                    <li><a href="investor.html">Investor Relations</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+                
+            </div>
+           
+        </footer>
+        
+        
+        
+    </body>
+</html>

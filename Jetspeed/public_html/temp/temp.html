@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="JavaScript">
+            function conv(direction){
+                var fObj= document.convert.ftemp , cObj= document.convert.ctemp;
+                
+                if(direction == "ftoc"){
+                    cObj.value= Math.round((fObj.value-32)*(5/9));
+                } else {
+                    fObj.value = Math.round((parseInt(cObj.value)*(9/5))+32);
+                }
+            function clearAll(){
+                document.convert.ftemp.value="";
+                document.convert.ctemp.value="";
+            }    
+            }
+        </script>
+    </head>
+    <body>
+        <form style="border: 1px double blue; background-color: #DDF; padding: 4px; text-align: center" name="convert">
+         Fahrenheit:
+         <input type="text" name="ftemp" size="7" onchange="conv('ftoc')"> 
+         is the same as Celsius:
+         <input type="text" name="ctemp" size="7" onchange="conv('ctof')">
+         <br />
+         <input type="button" value="clear" onclick="clearAll();">
+        </form>>
+    </body>
+</html>

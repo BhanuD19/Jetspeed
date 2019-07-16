@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script language="JavaScript">
+            function showInfo(){
+                document.writeln("<div style='font-size: 75%'>");
+                document.writeln("Information about your browser:\n<ul>");
+                for(propertyName in navigator){
+                    document.writeln("<li>", propertyName, " = ", navigator[propertyName], "</li>");
+                }
+                document.writeln("</ul></div>");
+            }
+            document.writeln("<h1>Welcome,", navigator.appName, "User</h1>");
+            document.writeln("<h3>You're running ");
+            if(navigator.appName.indexOf("Win")> -1){
+                document.writeln("Microsoft Windows</h3>");                
+            } else if(navigator.appName.indexOf("Mac")> -1){
+                document.writeln("Apple MacOs</h3>");
+            } else{
+                document.writeln(navigator.platform, "</h3>");
+            }
+        showInfo();
+        </script>
+    </body>
+</html>
